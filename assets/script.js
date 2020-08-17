@@ -14,6 +14,7 @@ $.ajax({
 
 })
 
+
 $.ajax({
     url: queryURL2,
     method: "GET"
