@@ -40,7 +40,10 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response)  
+    console.log(response)
+    console.log(response.results[1].receipts)
+    console.log(response.results[1].disbursements)
+    console.log(response.results[1].last_cash_on_hand_end_period) 
 })
 
 // OpenFEC Dem API
@@ -49,7 +52,10 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response) 
+    console.log(response)
+    console.log(response.results[2].receipts)
+    console.log(response.results[2].disbursements)
+    console.log(response.results[2].last_cash_on_hand_end_period)
 })
 
 
