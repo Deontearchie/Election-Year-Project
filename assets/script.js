@@ -1,12 +1,12 @@
-var searchRep = "republican"
-var searchDem = "democrat"
 
-var queryURL1 = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ searchRep +"&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
-var queryURL2 = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ searchDem +"&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
+var newsRepURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=republican&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
+var newsDemURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=democrat&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
 
+var repURL = "https://api.open.fec.gov/v1/candidate/P80001571/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=maOo0oij50PHxFc0tYqHrMLoq2IWpO8idgJz07uf&sort=-cycle&sort_hide_null=false"
+var demURL = "https://api.open.fec.gov/v1/candidate/P80000722/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=maOo0oij50PHxFc0tYqHrMLoq2IWpO8idgJz07uf&sort=-cycle&sort_hide_null=false"
 
 $.ajax({
-    url: queryURL1,
+    url: newsRepURL,
     method: "GET"
 }).then(function(response){
 
@@ -14,15 +14,30 @@ $.ajax({
 
 })
 
-
 $.ajax({
-    url: queryURL2,
+    url: newsDemURL,
     method: "GET"
 }).then(function(response){
 
     console.log(response)
-    
 })
+
+$.ajax({
+    url: repURL,
+    method: "GET"
+}).then(function(response){
+
+    console.log(response)  
+})
+
+$.ajax({
+    url: demURL,
+    method: "GET"
+}).then(function(response){
+
+    console.log(response) 
+})
+
 
 
 
