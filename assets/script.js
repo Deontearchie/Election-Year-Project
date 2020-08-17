@@ -18,7 +18,6 @@ $.ajax({
     // Pull article headline text which will act as links
     for(var i = 0; i<5; i++)
     console.log(response.response.docs[i].headline.main)
-
 })
 
 // Democrat News API
