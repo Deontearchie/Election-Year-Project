@@ -4,8 +4,8 @@ var newsRepURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=rep
 var newsDemURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=democrat&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
 
 
-var repURL = "https://api.open.fec.gov/v1/candidate/P80001571/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=gBQXPQrh66CIa0IHGUl8CMkvjgIuprug&sort=-cycle&sort_hide_null=false"
-var demURL = "https://api.open.fec.gov/v1/candidate/P80000722/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=gBQXPQrh66CIa0IHGUl8CMkvjgIuprug&sort=-cycle&sort_hide_null=false"
+var repURL = "https://api.open.fec.gov/v1/candidate/P80001571/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=kc73kKIleLqFLv0QYX943dy63ygrMiEk50ptLRJw&sort=-cycle&sort_hide_null=false"
+var demURL = "https://api.open.fec.gov/v1/candidate/P80000722/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=kc73kKIleLqFLv0QYX943dy63ygrMiEk50ptLRJw&sort=-cycle&sort_hide_null=false"
 
 
 
@@ -67,12 +67,14 @@ $.ajax({
 $.ajax({
     url: repURL,
     method: "GET"
-}).then(function(response){
+}).then(function(response){ 
 
-    console.log(response)
-    console.log(response.results[1].receipts)
-    console.log(response.results[1].disbursements)
-    console.log(response.results[1].last_cash_on_hand_end_period) 
+    // Code to displkay monetary stats
+    var newDiv = $("<div>")
+
+    newDiv.html("<h2>Total Money raised: $"+ response.results[1].receipts + "</h2><h2> Money spent: $" + response.results[1].disbursements+"</h2><h2> Money on Hand: $"+ response.results[1].last_cash_on_hand_end_period + "<h2>")
+
+    $("#statsRep").append(newDiv)
 })
 
 // OpenFEC Dem API
@@ -81,11 +83,15 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response)
-    console.log(response.results[2].receipts)
-    console.log(response.results[2].disbursements)
-    console.log(response.results[2].last_cash_on_hand_end_period)
+    // Code to display monetary stats
+    var newDiv = $("<div>")
+
+    newDiv.html("<h2>Total Money raised: $"+ response.results[2].receipts + "</h2><h2> Money spent: $" + response.results[2].disbursements+"</h2><h2> Money on Hand: $"+ response.results[2].last_cash_on_hand_end_period + "<h2>")
+
+    $("#statsDem").append(newDiv)
 })
+
+
 
 $("#learnMoreRep").on("click", function() {
     location.html = "republican.html";
