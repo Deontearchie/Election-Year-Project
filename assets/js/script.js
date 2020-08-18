@@ -20,6 +20,7 @@ $.ajax({
     // Pull article headline text which will act as links
 
     for(var i = 0; i<5; i++){
+        console.log(response.response.docs[i].headline.main)
 
         var headline = response.response.docs[i].headline.main
         var url = response.response.docs[i].web_url
@@ -47,6 +48,7 @@ $.ajax({
     // Pull article headline text which will act as links
 
     for(var i = 0; i<5; i++){
+        console.log(response.response.docs[i].headline.main)
 
         var headline = response.response.docs[i].headline.main
         var url = response.response.docs[i].web_url
@@ -85,8 +87,10 @@ $.ajax({
     console.log(response.results[2].last_cash_on_hand_end_period)
 })
 
+$("#learnMoreRep").on("click", function() {
+    location.html = "republican.html";
+})
 
-
-
-
-
+$("#learnMoreDem").on("click", function() {
+    location.html = "republican.html";
+})
