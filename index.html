@@ -7,53 +7,53 @@
     <title>Main Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src='assets/script.js'></script>
+    <script src='assets/js/script.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
 </head>
 
 <body>
-    <header style="text-align:center; border: 10px solid black; padding: 30px;">Election Year 2020</header>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
+    <header id="Header">Election Year 2020</header>
 
 
 
-    <div id="democratic-background" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid">
-        <div class="uk-card-media-left uk-cover-container">
-            <img id="biden" src="img/Biden2.jpg" alt="biden" uk-img>
-            <canvas width="600" height="400"></canvas>
-        </div>
+    <div class="container">
 
-        <div>
-            <div class="uk-card-body">
+        <div id="democratic-background" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid">
+            <div class="uk-card-media-left uk-cover-container">
+                <img id="biden" src="assets/img/Biden2.jpg" alt="biden" uk-img>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
 
-                <h3 id="biden-head" class="uk-card-title">Are you a Democrat?</h3>
-                <p id="biden-txt">Do you share and agree with the values of the liberal democratic party? <br> then click on your canidate, the challenger Joe Biden</p>
+                    <h3 id="biden-head" class="uk-card-title">Are you a Democrat?</h3>
+                    <p id="biden-txt">Do you share and agree with the values of the liberal democratic party? <br> then click on your canidate, the challenger Joe Biden</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="republican-backgroud" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid">
-        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-            <img id="trump" src="img/trump3.jpg" alt="trump" uk-img>
-            <canvas width="600" height="400"></canvas>
+        <div id="republican-background" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid">
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img id="trump" src="assets/img/trump3.jpg" alt="trump" uk-img>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 id="trump-head" class="uk-card-title">Are you a Repubician?</h3>
+                    <div>
+                        <p id="trump-txt">Do you share and agree with the values of the conservative Rebubican party? <br> then click on your canadate, President Donald J Trump</p>
 
-        </div>
+                    </div>
 
-        <div>
-            <div class="uk-card-body">
-                <h3 id="trump-head" class="uk-card-title">Are you a Repubician?</h3>
-                <p id="trump-txt">Do you share and agree with the values of the conservative Rebubican party? then click on your canadate, President Donald J Trump</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="righBox" style="float: right; background: red; padding: 20px; height: 200px; width: 25%; margin: 125px; ">Rebublican</div>
-                <div class="leftBox" style="float: left; background: blue; padding: 20px; height: 200px; width: 25%; margin: 125px; ">Democrat</div>
-    </div>
-</div> -->
+
 
 </body>
 
