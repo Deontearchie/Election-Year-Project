@@ -24,7 +24,6 @@ $.ajax({
         var headline = response.response.docs[i].headline.main
         var url = response.response.docs[i].web_url
 
-
         // Code to create and append headline link
         var display = $("<>")
         var newLink = $("<a>")
@@ -56,8 +55,6 @@ $.ajax({
         newLink.text(headline)
         newlink.attr("href", url)
         display.append(newLink)
-
-
     }
     
 })
