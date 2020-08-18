@@ -16,8 +16,24 @@ $.ajax({
     console.log(response)
 
     // Pull article headline text which will act as links
-    for(var i = 0; i<5; i++)
-    console.log(response.response.docs[i].headline.main)
+    for(var i = 0; i<5; i++){
+
+        console.log(response.response.docs[i].headline.main)
+        console.log(response.response.docs[i].web_url)
+
+        var headline = response.response.docs[i].headline.main
+        var url = response.response.docs[i].web_url
+
+
+        // Code to create and append headline link
+        var display = $("<>")
+        var newLink = $("<a>")
+        newLink.text(headline)
+        newlink.attr("href", url)
+        display.append(newLink)
+    }
+
+    
 })
 
 // Democrat News API
@@ -29,8 +45,20 @@ $.ajax({
     console.log(response)
 
     // Pull article headline text which will act as links
-    for(var i = 0; i<5; i++)
-    console.log(response.response.docs[i].headline.main)
+    for(var i = 0; i<5; i++){
+        
+        console.log(response.response.docs[i].headline.main)
+        console.log(response.response.docs[i].web_url)
+
+        // Code to create and append headline link
+        var display = $("<>")
+        var newLink = $("<a>")
+        newLink.text(headline)
+        newlink.attr("href", url)
+        display.append(newLink)
+
+
+    }
     
 })
 
