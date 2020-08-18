@@ -15,8 +15,6 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response)
-
     // Pull article headline text which will act as links
 
     for(var i = 0; i<5; i++){
@@ -43,8 +41,6 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response)
-
     // Pull article headline text which will act as links
 
     for(var i = 0; i<5; i++){
@@ -63,17 +59,23 @@ $.ajax({
     
 })
 
+
 // OpenFEC Rep API
 $.ajax({
     url: repURL,
     method: "GET"
 }).then(function(response){
 
-    console.log(response)
-    console.log(response.results[1].receipts)
-    console.log(response.results[1].disbursements)
-    console.log(response.results[1].last_cash_on_hand_end_period) 
+    // Code to dislay monetary stats 
+
+    var newDiv = $("<div>")
+
+    newDiv.html("<h2>Total Money raised: $"+ response.results[1].receipts + "</h2><h2> Money spent: $" + response.results[1].disbursements+"</h2><h2> Money on Hand: $"+ response.results[1].last_cash_on_hand_end_period + "<h2>")
+
+    $("#statsRep").append(newDiv)
+
 })
+
 
 // OpenFEC Dem API
 $.ajax({
@@ -81,10 +83,13 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    console.log(response)
-    console.log(response.results[2].receipts)
-    console.log(response.results[2].disbursements)
-    console.log(response.results[2].last_cash_on_hand_end_period)
+    // Code to display monetary stats
+
+    var newDiv = $("<div>")
+
+    newDiv.html("<h2>Total Money raised: $"+ response.results[2].receipts + "</h2><h2> Money spent: $" + response.results[2].disbursements+"</h2><h2> Money on Hand: $"+ response.results[2].last_cash_on_hand_end_period + "<h2>")
+
+    $("#statsDem").append(newDiv)
 })
 
 $("#learnMoreRep").on("click", function() {
