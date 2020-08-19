@@ -26,13 +26,13 @@
 }
 
 #democratic-background {
-    background-image: url(/assets/img/democratic.jpg);
+    background-image: url(../img/democratic.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #republican-background {
-    background-image: url(/assets/img/republicanlogo3.png);
+    background-image: url(../img/republicanlogo3.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -51,6 +51,40 @@
 
 #trump-head {
     text-align: center;
+}
+
+#articlesDem {
+    font-size: x-large;
+}
+
+.info {
+    border-style: solid;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.knowCandidate {
+    text-align: center;
+    color: white;
+}
+
+#bodyDem {
+    background-color: #0000ff;
+}
+
+.twitter-timeline {
+    margin-left: 20px;
+}
+
+.slides {
+    border-style: solid;
+    border-color: white;
+}
+
+#bodyRep {
+    background-color: #ff0803;
+
     color: black;
     margin-bottom: 0;
     font-size: xx-large;
