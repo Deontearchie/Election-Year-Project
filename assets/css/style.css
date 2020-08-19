@@ -1,0 +1,48 @@
+#Header {
+    text-align: center;
+    font-family: EnglishTowne-Normal;
+    font-size: xx-large;
+    color: black;
+}
+
+#biden {
+    float: left;
+    height: 80%;
+}
+
+#biden-txt {
+    text-align: center;
+    font-size: x-large;
+    float: right;
+}
+
+#biden-head {
+    text-align: center;
+}
+
+#democratic-background {
+    background-image: url(/assets/img/democratic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#republican-background {
+    background-image: url(/assets/img/republicanlogo3.png);
+    background-position: center;
+    background-size: 1400;
+    background-repeat: no-repeat;
+}
+
+#thumbsup {
+    float: right;
+    height: 50%;
+}
+
+#trump-txt {
+    text-align: center;
+    font-size: x-large;
+}
+
+#trump-head {
+    text-align: center;
+}
