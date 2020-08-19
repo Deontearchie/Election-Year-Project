@@ -70,7 +70,7 @@ $.ajax({
 
     var newDiv = $("<div>")
 
-    newDiv.html("<h2>Total Money raised: $"+ response.results[1].receipts + "</h2><h2> Money spent: $" + response.results[1].disbursements+"</h2><h2> Money on Hand: $"+ response.results[1].last_cash_on_hand_end_period + "<h2>")
+    newDiv.html("<h4>Total Money raised: $"+ response.results[1].receipts + "</h4><h4> Money spent: $" + response.results[1].disbursements+"</h4><h4> Money on Hand: $"+ response.results[1].last_cash_on_hand_end_period + "<h4>")
 
     $("#statsRep").append(newDiv)
 
@@ -87,7 +87,7 @@ $.ajax({
 
     var newDiv = $("<div>")
 
-    newDiv.html("<h2>Total Money raised: $"+ response.results[2].receipts + "</h2><h2> Money spent: $" + response.results[2].disbursements+"</h2><h2> Money on Hand: $"+ response.results[2].last_cash_on_hand_end_period + "<h2>")
+    newDiv.html("<h4>Total Money raised: $"+ response.results[2].receipts + "</h4><h4> Money spent: $" + response.results[2].disbursements+"</h4><h4> Money on Hand: $"+ response.results[2].last_cash_on_hand_end_period + "<h4>")
 
     $("#statsDem").append(newDiv)
 })
