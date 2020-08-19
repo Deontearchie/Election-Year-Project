@@ -18,17 +18,12 @@
     <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Republican</a></li>
-                <li>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active">
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
                 <li><a href="democrat.html">democratic</a></li>
+                <li class="uk-active">
+                    <a href="index.html">Home</a>
+
+                </li>
+                <li><a href="republican.html">Republican</a></li>
             </ul>
         </div>
     </nav>
@@ -42,30 +37,28 @@
                 </div>
                 <div class="uk-card-body">
 
-                    <h3 id="biden-head" class="uk-card-title">Are you a Democrat?</h3>
-                    <p id="biden-txt">Do you share and agree with the values of the liberal democratic party? <br> then click on your canidate, the challenger Joe Biden</p>
-                    <button id="learnMoreDem">Learn More</button>
+                    <h3 id="biden-head" class="uk-card-title uk-text-right">Are you a Democrat?</h3>
+                    <p class="uk-text-right" id="biden-txt">Do you share and agree with the values of the liberal democratic party? <br> then click on your canidate, the challenger Joe Biden</p>
+                    <button class="uk-card-footer" id="learnMoreDem">Learn More</button>
                 </div>
 
             </div>
             <div id="republican-background" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-grid">
-                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <div>
+                    <div class="uk-card-body">
+                        <h3 id="trump-head" class="uk-card-title uk-text-left">Are you a Repubician?</h3>
+                        <p id="trump-txt" class="uk-text-left">Do you share and agree with the values of the conservative Rebubican party? <br> then click on your canadate, President Donald J Trump</p>
+                        <button class="uk-card-footer" id="learnMoreRep">Learn More</button>
+                    </div>
+                </div>
+                <div class="uk-card-media-right uk-cover-container">
                     <img id="thumbsup" src="assets/img/thumbsup.jpg" alt="trump" uk-img>
                     <canvas width="600" height="400"></canvas>
                 </div>
-                <div>
-                    <div class="uk-card-body">
-                        <h3 id="trump-head" class="uk-card-title">Are you a Repubician?</h3>
-                        <p id="trump-txt">Do you share and agree with the values of the conservative Rebubican party? then click on your canadate, President Donald J Trump</p>
-                        <button id="learnMoreRep">Learn More</button>
-                    </div>
-                </div>
             </div>
-            <!-- <div class="righBox" style="float: right; background: red; padding: 20px; height: 200px; width: 25%; margin: 125px; ">Rebublican</div>
-        <div class="leftBox" style="float: left; background: blue; padding: 20px; height: 200px; width: 25%; margin: 125px; ">Democrat</div>
+        </div>
     </div>
-</div> -->
-            <script src='assets/js/script.js'></script>
+    <script src='assets/js/script.js'></script>
 </body>
 
 </html>
