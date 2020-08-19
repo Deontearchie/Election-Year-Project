@@ -4,8 +4,8 @@ var newsRepURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=rep
 var newsDemURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=democrat&api-key=205xGLUKGrfIcFcy6H6O0cbxQeSaYjD6"
 
 
-var repURL = "https://api.open.fec.gov/v1/candidate/P80001571/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=gBQXPQrh66CIa0IHGUl8CMkvjgIuprug&sort=-cycle&sort_hide_null=false"
-var demURL = "https://api.open.fec.gov/v1/candidate/P80000722/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=gBQXPQrh66CIa0IHGUl8CMkvjgIuprug&sort=-cycle&sort_hide_null=false"
+var repURL = "https://api.open.fec.gov/v1/candidate/P80001571/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=SbTfdk5bfFpPbr3yBI4DOHOfXwx9zfi9ACxN1iVg&sort=-cycle&sort_hide_null=false"
+var demURL = "https://api.open.fec.gov/v1/candidate/P80000722/totals/?sort_null_only=false&election_full=true&per_page=20&sort_nulls_last=false&page=1&api_key=SbTfdk5bfFpPbr3yBI4DOHOfXwx9zfi9ACxN1iVg&sort=-cycle&sort_hide_null=false"
 
 
 
@@ -93,9 +93,9 @@ $.ajax({
 })
 
 $("#learnMoreRep").on("click", function() {
-    location.html = "republican.html";
+    location.href = "republican.html";
 })
 
 $("#learnMoreDem").on("click", function() {
-    location.html = "republican.html";
+    location.href = "democrat.html";
 })
