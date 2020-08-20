@@ -8,7 +8,8 @@
 
 #biden {
     float: left;
-    height: 80%;
+    height: 65%;
+    width: 65%;
 }
 
 #biden-txt {
@@ -29,17 +30,20 @@
     background-image: url(../img/democratic.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 38%;
 }
 
 #republican-background {
     background-image: url(../img/republicanlogo3.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 38%;
 }
 
 #thumbsup {
     float: right;
-    height: 50%;
+    height: 65%;;
+    width: 65%;
 }
 
 #trump-txt {
